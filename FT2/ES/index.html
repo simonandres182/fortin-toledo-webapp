@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recorre Asunción</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#botonCambiarIdioma").click(function () {
+                var now = new Date();
+                var time = now.getTime();
+                var expireTime = time + 1000 * 36000;
+                now.setTime(expireTime);
+                document.cookie = "idioma='';expires="+now.toUTCString()+';path=/';
+                var url = window.location.href.replace('/ES','');
+                window.location.href = url;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Fortín Toledo</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link" id="botonCambiarIdioma">Idioma - Language</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="p-5 my-4 bg-light rounded-3">
+
+            <h2>Héroes de Toledo</h2>
+            <p><img src="A2.jpeg" class="img-fluid" /></p>
+            <p><audio controls>
+                    <source src="A2ES.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></p>
+
+            <p><b>- Teniente Coronel de Caballería Alfredo Ramos Ríos</b></p>
+
+            <p>Nació el 17 de marzo de 1903, en la ciudad de San Juan Bautista de las Misiones.</p>
+            
+            <p>Fue fundador de fortines en la pre guerra ante la inminente guerra con Bolivia, el Capitán Alfredo Ramos fue comisionado a las Misiones para la selección de reclutas con quienes completar los cuadros del Regimiento de Caballería Nº 2 "Cnel. Toledo".</p>
+            
+            <p>En diciembre de 1932 asume el mando del R.C. 1 "Valois Rivarola" el cual reorganizó en seis cuadros, se constituyó en una unidad de élite que inició su inigualada campaña de victorias. A su mando, el Regimiento de Caballería Nº 1 “Coronel Valois Rivarola” recupera su moral.</p>
+            
+            <p>El Mayor Ramos fue condecorado con la Cruz del Chaco.</p>
+            
+            <p>Falleció en Asunción en 1991, estuvo casado con Luisa Abbate.</p>
+            <br>
+            
+            
+            
+            <p><b>- General Juan Bautista Ayala</b></p>
+            
+            <p>Nace en Pilar (Ñeembucú), el 24 de junio de 1889 quien tendría una gran actuación en la Guerra del Chaco.</p>
+            
+            <p>Fue uno de los primeros oficiales paraguayos que conocieron el suelo chaqueño, pues ya en 1921 estuvo en esta región del país comisionado para verificar el avance boliviano en la zona del Pilcomayo.</p>
+            
+            <p>Realizó una brillante actuación con los primeros planes operativos del ejército paraguayo.  Iniciadas las hostilidades, cumplió una excelente labor en la organización de la movilización y aprestamiento de nuevas unidades y apoyo logístico.</p>
+            
+            <p>En la post guerra, ya General de Brigada, Ayala fue Ministro de Guerra y Marina en el gabinete del Dr. Félix Paiva, y Comandante en Jefe de las FF.AA. de la Nación. Embajador ante el gobierno de los EE.UU. de América, integró la Delegación paraguaya a la Conferencia de San Francisco, que dio por resultado la creación de las Naciones Unidas, en 1945.</p>
+            
+            <p>Falleció en 1981; estuvo casado con Juana Perrier.</p>
+            <br>
+            
+            
+            
+            <p><b>- Teniente 1° Manuel Irala Fernández</b></p>
+            
+            <p>Nace el 1 de Junio de 1893 en Concepción un personaje que venía tocado para ser leyenda, el pueblo paraguayo le daría su inmortal sobrenombre: «Yakaré Valija».</p>
+            
+            <p>El Tte. Irala Fernández se destacó durante la Guerra del Chaco por sus patrullajes lejanos en la retaguardia enemiga, fue un gran conocedor del suelo chaqueño.</p>
+            
+            <p>Su máximo actuar fue en la Batalla de Fortín Toledo, en donde prácticamente sólo se escabulló tras las líneas enemigas y como los héroes de nuestra gran epopeya del 70, capturó a todo un escuadrón.</p>
+            
+            <p>Yacaré Valija lleva ese mote porque durante la Revolución de 1922 se introdujo a la línea enemiga de manera desapercibida y es ahí que encuentra una valija de piel de yacaré (cocodrilo), la maleta contenía un mapa, ubicación del resto de los campamentos y un cuaderno con miles de datos anotados, pueblo por pueblo.</p>
+            
+            <p>Fue el mayor Félix Cabrera quien lo felicitó después de aquella misión tan importante y expresó: "Nde Manuel, le entraste como yacaré a la valija".</p>
+            
+            <p>Luego de la guerra se casó y vivió hasta su muerte ocurrida el 2 de abril de 1979 en la ciudad de Luque, ciudad que le otorgó como homenaje póstumo, el título de "Hijo dilecto".</p>
+                
+                
+                
+                
+
+        </div>
+
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright &copy; 2022</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://www.senatur.gov.py/" class="text-dark">SENATUR</a>
+                    <span class="text-muted mx-2">|</span>
+                    <a href="https://play.google.com/store/apps/developer?id=Museo+Interactivo" class="text-dark">Museo
+                        Interactivo</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
